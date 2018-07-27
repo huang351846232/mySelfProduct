@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  background: url(../images/1532675543.jpg) no-repeat;
+  background-size: 100%;
+}
+#home{
+  color: #ff33cc;	
+  font-size: 20px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  opacity: 0;
+  transform: translate(-150px, 0) scale(.5);
+  animation: leftRight 2s forwards;
+  position: absolute;
+  top: 80%;
+  left: 55%;
+}
+@keyframes leftRight {
+  40% {
+    transform: translate(30px, 0) scale(.7);
+    opacity: 1;
+    color: #fff;
+  }
+  60% {
+    color: #ff99cc;
+  }
+  80% {
+    transform: translate(0) scale(2);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0) scale(1);
+    opacity: 1;
+  }
+}
